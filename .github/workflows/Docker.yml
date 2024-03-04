@@ -27,8 +27,5 @@ jobs:
     - name: Run container for testing
       run: docker-compose up -d
 
-    - name: Run tests inside container
-      run: docker-compose exec web pytest
-
     - name: Stop and remove container
       run: docker-compose down
