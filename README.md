@@ -2,6 +2,10 @@
 
 Este projeto consiste em uma aplicação web construída utilizando Python/Django que oferece uma API para converter valores entre diferentes moedas. A aplicação utiliza uma API pública de cotações de moedas e criptomoedas para obter os dados necessários.
 
+## FLUXO UML
+
+![Diagrama](Conversor.jpg)
+
 ## Organização do código
 
 O código está organizado seguindo o padrão de separação de módulos, com uma estrutura clara que distingue entre a lógica de negócios (model), a interface com o usuário (view) e o back-end responsável por conectar-se com a API de cotações.
