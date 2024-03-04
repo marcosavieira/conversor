@@ -10,21 +10,11 @@ O código está organizado seguindo o padrão de separação de módulos, com um
 
 Realizei a criação de pipe no github actions para testar a aplicação com e sem Docker
 
-## Assertividade
-
-A aplicação está projetada para converter valores entre moedas especificadas, sempre considerando a moeda de origem convertida para dólar.
-
-## Legibilidade do código
-
-O código está escrito com foco na legibilidade, incluindo comentários explicativos sempre que necessário para ajudar na compreensão da lógica implementada.
-
-## Segurança
-
-Até o momento, não foram identificadas vulnerabilidades de segurança na aplicação. No entanto, medidas adicionais podem ser implementadas conforme necessário para garantir a segurança dos dados e do sistema.
-
 ## Cobertura de testes
 
 A aplicação possui testes implementados utilizando Pytest para garantir a qualidade do código. Embora não seja esperada uma cobertura completa de testes, desenvolvi testes para cobrir as principais funcionalidades da aplicação.
+
+Para rodar os teste, na rayz do projeto executar o comando `pytest`
 
 ## Escolhas técnicas
 
