@@ -56,4 +56,20 @@ http://localhost:8000/api/converter/?from=MOEDA-DE-ORIGEM&to=MOEDA-DESTINO&amoun
 ```
 
 Substitua "MOEDA-DE-ORIGEM", "MOEDA-DESTINO" e "QUANTIDADE" pelos valores desejados para realizar a conversão.
-````
+
+## EXEMPLO DE CHAMADA 
+```
+http://localhost:8000/api/converter/?from=BTC&to=BRL&amount=2.5
+```
+## RETORNO
+
+```json
+{
+    "from_currency": "BTC-USD",
+    "to_currency": "BRL",
+    "amount": 2.5,
+    "conversion": "R$827,189.41"
+}
+
+}
+```
