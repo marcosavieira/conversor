@@ -1,0 +1,34 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+
+  build_and_test:
+
+    runs-on: ubuntu-latest
+
+    services:
+      docker:
+        image: docker:20.10.9
+        options: --privileged
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Build the Docker image
+      run: docker-compose build
+
+    - name: Run container for testing
+      run: docker-compose up -d
+
+    - name: Run tests inside container
+      run: docker-compose exec web pytest
+
+    - name: Stop and remove container
+      run: docker-compose down
