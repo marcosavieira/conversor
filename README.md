@@ -4,7 +4,12 @@ Este projeto consiste em uma aplicação web construída utilizando Python/Djang
 
 ## FLUXO UML
 
-![Diagrama]([Conversor.jpg](https://i.imgur.com/JsvU26R.png))
+<div style="margin-top: 20px; margin-bottom: 20px;">
+  <img src="https://i.imgur.com/cgCit3U.png" alt="Página principal da aplicação" style="width: 500px; height: auto;">
+  <span>Página principal da aplicação onde o usuário pode gerenciar suas tarefas.</span>
+</div>
+
+![DIAGRAMA](https://i.imgur.com/JsvU26R.png)
 
 ## Organização do código
 
